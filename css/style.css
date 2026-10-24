@@ -293,6 +293,53 @@ li {
   color: #333;
   font-size: 16px;
 }
+
+.option-title h4 {
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.option-list {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+   
+}
+.option-list label {
+    width: 35%;
+    font-size: 16px;
+    display: flex;
+    gap: 5px;
+}
+.option-list input{
+
+    width: 16px;
+    height: 16px;
+    border: 2px solid #d6b36a;
+    background-color: #c79a3c;
+    cursor: pointer;
+}
+.option-topping  {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.topping-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+.topping-item:hover {
+    border-color: #0d6efd;
+    background-color: #f0f7ff;
+}
 /* End MOdal product */
 
 /* DROPDOWN product */
@@ -385,13 +432,4 @@ input[type="number"]{
     border: none;
     padding: 20px;
     padding-left: 15px;
-}
-.option-list label {
-    margin-right: 20px;
-    cursor: pointer;
-}
-.option-group h4, .option-title h4 {
-    font-size: 15px;
-    margin-bottom: 6px;
-    color: #333;
 }
