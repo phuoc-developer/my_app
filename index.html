@@ -148,8 +148,8 @@
         <h4>Tất cả sản phẩm</h4>
         <a href="#" class="text-warning">Xem tất cả »</a>
       </div>
-      <div class="col-sm-4">
-        <div class="singe-product" data-bs-toggle="modal" data-bs-target="#myModal">
+      <div class="col-sm-4" >
+        <div class="singe-product" data-bs-toggle="modal" data-bs-target="#productDetail">
             <div class="product-card" style="width: 18rem;">
               <div class="productinfo text-center">
                   <img src="image/product/product1.jpg" alt="...">
@@ -164,7 +164,7 @@
         </div>       
       </div>
        <div class="col-sm-4">
-        <div class="singe-product">
+        <div class="singe-product" data-bs-toggle="modal" data-bs-target="#productDetail">
             <div class="product-card" style="width: 18rem;">
               <div class="productinfo text-center">
                   <img src="image/product/product2.jpg" alt="...">
@@ -179,7 +179,7 @@
         </div>       
       </div>
       <div class="col-sm-4">
-        <div class="singe-product">
+        <div class="singe-product" data-bs-toggle="modal" data-bs-target="#productDetail">
             <div class="product-card" style="width: 18rem;">
               <div class="productinfo text-center">
                   <img src="image/product/product3.jpg" alt="...">
@@ -194,7 +194,7 @@
         </div>       
       </div>
       <div class="col-sm-4">
-        <div class="singe-product">
+        <div class="singe-product" data-bs-toggle="modal" data-bs-target="#productDetail">
             <div class="product-card" style="width: 18rem;">
               <div class="productinfo text-center">
                   <img src="image/product/product3.jpg" alt="...">
@@ -209,7 +209,7 @@
         </div>       
       </div>
       <div class="col-sm-4">
-        <div class="singe-product">
+        <div class="singe-product" data-bs-toggle="modal" data-bs-target="#productDetail">
             <div class="product-card" style="width: 18rem;">
               <div class="productinfo text-center">
                   <img src="image/product/product3.jpg" alt="...">
@@ -224,7 +224,7 @@
         </div>       
       </div>
       <div class="col-sm-4">
-        <div class="singe-product">
+        <div class="singe-product" data-bs-toggle="modal" data-bs-target="#productDetail">
             <div class="product-card" style="width: 18rem;">
               <div class="productinfo text-center">
                   <img src="image/product/product3.jpg" alt="...">
@@ -242,6 +242,8 @@
       </div>
     </div>
 <!-- End Menu -->
+
+
 
 <!-- footer -->
     <footer class="bg-dark text-light py-5">
@@ -284,6 +286,81 @@
 </div>
 <!-- End Footer -->
 
+
+
+<div class="modal" id="productDetail">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Chi tiết sản phẩm</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body custom_modal_product">
+                   <div class="product_item">
+                      <div class="row">
+                      <div class="singe-product-image">
+                        <div class="col-md-5">
+                          <img src="image/product/product1.jpg">
+                        </div>
+                        <div class="col-md-7">
+                          <div class="singe-product-content">
+                            <h4>san pham 1</h4>
+                            <span class="price">20.000 VNĐ</span>
+                            <span class="old-price">100.000 VNĐ</span>
+                            <p> <span> Danh mục: Tra sua</span></p>
+                            <p><span>Kho hàng: 100</span></p>
+                            <p><span>Trình trạng:
+                                    <span style="color: green; font-weight: bold;" >còn hàng</span></span></p>
+                            <p class="desc">Mô tả: sieu ngon </p>
+                            <form action="#" method="post">    
+                                  <label class="action-wrapper" >Số lượng:</label>
+                                  <input name="qty" type="number" value="1" min="1" max="100" class="qty_input">
+                                    <button type="submit" class="btn btn-cart btn-warning round-fill">
+                                      <i class="fa-solid fa-cart-shopping"></i>
+                                        + 100.000<span class="total_price_display">VNĐ</span> 
+                                    </button>
+                          </div>   
+                        </div>
+                           <div class="option-box mt-3">
+                              <div class="option-group mb-3">
+                                <h4 class="fw-bold mb-2">Chọn loại</h4>
+                              </div>
+                              <div class="option-list d-flex gap-3">
+                                <label class="form-check-label"><input type="radio" name="option_style" value="Nóng" class="form-check-input me-1">Nóng</label>
+                                <label class="form-check-label"><input type="radio" name="option_style" value="Lạnh" class="form-check-input me-1">Lạnh</label>
+                              </div>
+                              <div class="option-group mb-3">
+                                <h4 class="fw-bold mb-2">Chọn size</h4>
+                              </div>
+                              <div class="option-list d-flex gap-3">
+                                <label class="form-check-label "><input type="radio" name="option_size" value="M" class="form-check-input me-1">Size M</label>
+                                <label class="form-check-label"><input type="radio" name="option_size" value="L" class="form-check-input me-1">Size L</label>
+                              </div>
+                               <div class="option-group mb-3">
+                                <h4 class="fw-bold mb-2">Chọn mức đường</h4>
+                              </div>
+                              <div class="option-list d-flex gap-3">
+                                <label class="form-check-label"><input type="radio" name="option_sugar" value="100%" class="form-check-input me-1">100% đường</label>
+                                <label class="form-check-label"><input type="radio" name="option_sugar" value="không đúng" class="form-check-input me-1">không đường</label>
+                              </div>
+                               <div class="option-group mb-3">
+                                <h4 class="fw-bold mb-2">Chọn Topping</h4>
+                              </div>
+                              <div class="option-list d-flex gap-3">
+                                <label class="form-check-label"><input type="radio" name="option_topping" value="tranchau" class="form-check-input me-1">Thêm trân châu +60.000VNĐ</label>
+                                
+                              </div>
+                          </form>   
+                      </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+</div>
+
 <div class="modal" id="registerModal">
   <div class="modal-dialog">
               <div class="modal-content">
@@ -315,7 +392,6 @@
                       </div>
                 </div>    
  
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
