@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TocoToco Menu</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<link  href="css/style.css"  rel="stylesheet">
+<link href="css/animate.css"  rel="stylesheet">
+<link href="css/bootstrap.min.css"  rel="stylesheet">
+<link href="css/font-awesome.min.css"  rel="stylesheet">
+<link href="css/prettyPhoto.css"  rel="stylesheet">
+<link href="css/price-range.css"  rel="stylesheet">
+<link href="css/responsive.css"  rel="stylesheet">
+</head>
+
+<body>
+<!--Admin-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3">
+  <div class="container-fluid">
+    <a href="#" class="navbar-brand fw-bold text-uppercase">TOcoToco TEA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNavbar">
+      <span class="navbar-toggle-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="adminNavbar">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" ><a href="admin.html" class="nav-link"><i class="fas fa-home"></i>Trang chủ</a></li>
+        <li class="nav-item"><a href="category.html" class="nav-link"><i class="fa-solid fa-list"></i>Danh mục</a></li>
+        <li class="nav-item"><a href="product.html" class="nav-link"><i class="fa-solid fa-mug-hot"></i>sản phẩm</a></li>
+        <li class="nav-item"><a href="user.html" class="nav-link active"><i class="fa-solid fa-user"></i>Người dùng</a></li>
+        <li class="nav-item"><a href="shopping.html" class="nav-link"><i class="fa-solid fa-cart-shopping"></i>Đơn hàng</a></li>
+      </ul>
+      <form class="d-flex align-items-center">
+        <input type="search" class="form-control form-control-sm me-3" placeholder="Tìm kiếm">
+        <button class="btn btn-sm btn-outline-light me-3" type="button">Tìm kiếm</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!--Admin  -->
+
+<!-- User  -->
+<section class="user-customer">
+  <div class="container-fluid p-4">
+    <div class="card shadow-sm border-0">
+      <div class="card-header bg-light p-3">
+       <div class="row">
+        <div class="col-md-6">
+          <h5 class="mb-0 text-secondary text-uppercase fw-bold">Quản lý người dùng</h5>
+        </div>
+        <div class="col-md-6 text-end">
+          <select class="form-select form-select-sm w-auto d-inline-block">
+            <option>Sắp xếp theo</option>
+          </select>
+        </div>
+       </div>
+      </div>
+    </div>
+  <div class="table-responsive">
+    <table class="table align-middle mb-0">
+      <thead class="table-dark">
+        <tr>
+          <th class="ps-3">Ảnh</th>
+          <th>Tên</th>
+          <th>Email</th>
+          <th>Số điện thoại</th>
+          <th>Địa chỉ</th>
+          <th>Verify</th>
+          <th>Quyền</th>
+          <th class="text-center">Hành động</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <img src="image/logo/avatar-user.jpg" alt="" width="50" height="50" class="rounded-cricle border">
+          </td>
+          <td class="fw-bold">Nguyễn Đăng Thành</td>
+          <td>1@gmail.com</td>
+          <td>0154545454</td>
+          <td>121212</td>
+          <td>1</td>
+          <td><span class="badge bg-light text-dark border">Người dùng</span></td>
+          <td class="text-center">
+            <button class="btn btn-warning btn-sm fw-bold" data-bs-toggle="modal" data-bs-target="#edituserModal">Sủa</button>
+            <button class="btn btn-danger btn-sm fw-bold">Xóa</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="image/logo/avatar-user.jpg" alt="" width="50" height="50" class="rounded-cricle border">
+          </td>
+          <td class="fw-bold">Nguyễn Đăng Thành</td>
+          <td>1@gmail.com</td>
+          <td>0154545454</td>
+          <td>121212</td>
+          <td>1</td>
+          <td><span class="badge bg-light text-dark border">Quản lý</span></td>
+          <td class="text-center">
+            <button class="btn btn-warning btn-sm fw-bold" data-bs-toggle="modal" data-bs-target="#edituserModal">Sửa</button>
+            <button class="btn btn-danger btn-sm fw-bold">Xóa</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+</section>
+<!-- End User -->
+
+<!-- footer -->
+    <footer class="bg-dark text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4 text-center">
+            <img src="image/logo/logo02.png" alt="logo" class="img-fuild " style="max-width: 200px;">
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase fw-bold gold-text">CÔNG TY CP TM & DV TACO VIỆT NAM</h5>
+            <p class="small mt-3">
+              <i>Trụ sở chính: Tầng 5 toà Tower 1, KĐT Times City, Hà Nội</i>
+            </p>
+            <p class="small"><i class="bi bi-envelope-fill"></i>info@tocotocotea.com</p>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h5 class="text-uppercase fw-bold gold-text">Về chúng tôi</h5>
+            <ul class="list-unstyled mt-3">
+              <li><a href="#" class="text-light text-decoration-none small">Giới thiệu về TocoToco</a></li>
+              <li><a href="#" class="text-light text-decoration-none small">Nhượng quyền</a></li>
+              <li><a href="#" class="text-light text-decoration-none small">Tin tức</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase fw-bold gold-text">Chính sách</h5>
+            <ul class="list-unstyled mt-3">
+              <li><a href="#" class="text-light text-decoration-none small">Chính sách thành viên</a></li>
+              <li><a href="#" class="text-light text-decoration-none small">Hình thức thanh toán</a></li>
+              <li><a href="#" class="text-light text-decoration-none small">Vận chuyển giao nhận</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="bg-secondary">
+        <div class="text-center small">
+          © 2026 TocoToco Tea. All rights reserved
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+<!-- End Footer -->
+
+<div class="modal" id="edituserModal">
+  <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title text-uppercase">Cập nhật thông tin thành viên</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="container-fluid">
+                      <div class="d-flex align-items-center justify-content-between mb-3">
+                          <form action="#">
+                            <div class="modal-body-admin">
+                             <div class="mb-3">
+                              <label class="form-label fw-bold">Họ và tên</label>
+                              <input type="text" class="form-control bg-light readonly" placeholder="Họ và tên">
+                             </div>
+                              <div class="mb-3">
+                              <label class="form-label fw-bold">Quyền hạn hệ thống</label>
+                              <select name="role" class="form-select">
+                                <option value="user">Người dùng</option>
+                                <option value="admin">Quản lý</option>
+                              </select>
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label fw-bold">Mã xác thực</label>
+                              <input type="text" class="form-control" placeholder="Nhập mã xác thực">
+                            </div>
+                            <div class="modal-footer-admin">
+                              <a href="#" class="btn btn-light border btn-sm px-3" data-bs-dismiss="modal">Đóng</a>
+                              <button class="btn btn-success btn-sm px-4 shadow-sm" type="submit">Xác nhận thay đổi</button>
+                            </div>
+                          </form>
+                      </div>
+                </div>    
+ 
+ 
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/fontawesome.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+
+</body>
+</html>
+

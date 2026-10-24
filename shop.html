@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TocoToco Menu</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<link  href="css/style.css"  rel="stylesheet">
+<link href="css/animate.css"  rel="stylesheet">
+<link href="css/bootstrap.min.css"  rel="stylesheet">
+<link href="css/font-awesome.min.css"  rel="stylesheet">
+<link href="css/prettyPhoto.css"  rel="stylesheet">
+<link href="css/price-range.css"  rel="stylesheet">
+<link href="css/responsive.css"  rel="stylesheet">
+</head>
+
+<body>
+
+
+
+<!-- Navbar -->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="image/logo/Logo01.png" height="40px" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="d-flex" role="search">
+        <input class="form-control sm-3" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
+      </form>
+    </div>
+    <div class="col-sm-4">
+     <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-login" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Đăng nhập</a></li>
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Đăng nhập</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="container-fluid">
+                      <div class="d-flex align-items-center justify-content-between mb-3">
+                          <form action="#">
+                              <div class="mb-3 mt-3">
+                                <label  class="form-label">Địa chỉ Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="dia chi email" name="email">
+                              </div>
+                              <div class="mb-3">
+                                <label  class="form-label">Mật khẩu:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="mat khau" name="pswd">
+                              </div>
+                              <div class="form-check mb-3">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" name="remember">Nhớ Đăng nhập
+                                </label>
+                              </div>
+                              <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                              <p class="text-center mb-0">Bạn chưa có tài khoản vui lòng đăng ký? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal">Đăng ký</a></p>
+                            </form>
+                      </div>
+                </div>       
+        </ul>
+    </div>
+  </div>
+</nav>
+<!-- End navbar -->
+
+<!-- MENU LEFT -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="menu-left">
+        <h5>MENU</h5>
+        <a class="active">Món nổi bật</a>
+        <a>Trà sữa</a>
+        <a>Chè</a>
+        <a>Fresh Fruit Tea</a>
+        <a>Macchiato</a>
+        <a>Special Drink</a>
+      </div>
+    </div>
+    <!-- PRODUCT -->
+    <div class="col-md-8">
+      <div class="d-flex justify-content-between mb-3">
+        <h4>Món nổi bật</h4>
+      </div>
+      <div class="col-sm-4">
+          <a href="#">
+            <div class="singe-product" data-bs-target="#productDetail" data-bs-toggle="modal">
+                <div class="product-card" style="width: 18rem;">
+                  <div class="productinfo text-center">
+                      <img src="image/product/product1.jpg" alt="...">
+                      <h5 class="card-title">sản phẩm 1</h5>
+                      <p class="card-text">
+                          <span class="price">30,000đ</span>
+                          <span class="old-price">100,000đ</span>
+                      </p>
+                      <a href="#" class="btn btn-primary"><i class="fa-solid fa-circle-plus"></i></a>       
+                  </div>        
+                </div>  
+            </div>
+          </a>    
+      </div>   
+         <div class="col-sm-4">
+          <a href="#">
+            <div class="singe-product" data-bs-target="#productDetail" data-bs-toggle="modal">
+                <div class="product-card" style="width: 18rem;">
+                  <div class="productinfo text-center">
+                      <img src="image/product/product1.jpg" alt="...">
+                      <h5 class="card-title">sản phẩm 2</h5>
+                      <p class="card-text">
+                          <span class="price">30,000đ</span>
+                          <span class="old-price">100,000đ</span>
+                      </p>
+                      <a href="#" class="btn btn-primary"><i class="fa-solid fa-circle-plus"></i></a>
+                  </div>  
+                </div>
+            </div>
+          </a>
+        </div>  
+      
+       <div class="col-sm-4">
+          <a href="#">
+            <div class="singe-product"data-bs-target="#productDetail" data-bs-toggle="modal">
+                <div class="product-card" style="width: 18rem;">
+                  <div class="productinfo text-center">
+                      <img src="image/product/product1.jpg" alt="...">
+                      <h5 class="card-title">sản phẩm 3</h5>
+                      <p class="card-text">
+                          <span class="price">30,000đ</span>
+                          <span class="old-price">100,000đ</span>
+                      </p>
+                      <a href="#" class="btn btn-primary"><i class="fa-solid fa-circle-plus"></i></a>
+                  </div>  
+                </div>
+            </div>
+          </a>
+        </div>  
+      
+        <div class="col-sm-4">
+          <a href="#">
+            <div class="singe-product"data-bs-target="#productDetail" data-bs-toggle="modal">
+                <div class="product-card" style="width: 18rem;">
+                  <div class="productinfo text-center">
+                      <img src="image/product/product1.jpg" alt="...">
+                      <h5 class="card-title">sản phẩm 4</h5>
+                      <p class="card-text">
+                          <span class="price">30,000đ</span>
+                          <span class="old-price">100,000đ</span>
+                      </p>
+                      <a href="#" class="btn btn-primary"><i class="fa-solid fa-circle-plus"></i></a>
+                  </div>  
+                </div>
+            </div>
+          </a>
+        </div>  
+      
+       <div class="col-sm-4">
+          <a href="#">
+            <div class="singe-product" data-bs-target="#productDetail" data-bs-toggle="modal">
+                <div class="product-card" style="width: 18rem;">
+                  <div class="productinfo text-center">
+                      <img src="image/product/product1.jpg" alt="...">
+                      <h5 class="card-title">sản phẩm 5</h5>
+                      <p class="card-text">
+                          <span class="price">30,000đ</span>
+                          <span class="old-price">100,000đ</span>
+                      </p>
+                      <a href="#" class="btn btn-primary"><i class="fa-solid fa-circle-plus"></i></a>
+                  </div>  
+                </div>
+            </div>
+          </a>
+        </div>  
+      
+       <div class="col-sm-4"> 
+           <a href="#"> 
+            <div class="singe-product" data-bs-toggle="modal" data-bs-target="#productDetail">
+                <div class="product-card" style="width: 18rem;">
+                  <div class="productinfo text-center">
+                      <img src="image/product/product1.jpg" alt="...">
+                      <h5 class="card-title">sản phẩm 6</h5>
+                      <p class="card-text">
+                          <span class="price">30,000đ</span>
+                          <span class="old-price">100,000đ</span>
+                      </p>
+                      <a href="cart.html" class="btn btn-primary"><i class="fa-solid fa-circle-plus"></i></a>
+                  </div>  
+                </div>
+            </div>
+          </a>
+        </div> 
+    </div>
+    <!-- Cart product -->
+    <div class="col-md-2">
+      <div class="cart-container shadow-sm p-3 bg-white rounded-4 cart-sidebar " style="top: 20px;">
+        <h4>Giỏ hàng của tôi</h4>
+      </div>
+      <div class="cart-body d-flex flex-column align-items-center text-center">
+        <p class="text-secondary small mb-2">Chưa có sản phẩm nào!</p>
+        <img src="image/logo/icon-glass-tea.png" width="30px">
+        <div class="fw-bold fs-5">x 0 = 0đ</div>
+        <a href="checkout.html">
+            <button type="button" class="bg-warning">Thanh toán</button>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>   
+<!--End PRODUCT-->
+
+
+
+
+   <!-- footer -->
+    <footer class="bg-dark text-uppercase text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4 text-center">
+            <img src="image/logo/logo02.png" alt="logo" class="img-fuild " style="max-width: 200px;">
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase fw-bold gold-text">CÔNG TY CP TM & DV TACO VIỆT NAM</h5>
+            <p class="small mt-3">
+              <i>Trụ sở chính: Tầng 5 toà Tower 1, KĐT Times City, Hà Nội</i>
+            </p>
+            <p class="small"><i class="bi bi-envelope-fill"></i>info@tocotocotea.com</p>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h5 class="text-uppercase fw-bold gold-text">Về chúng tôi</h5>
+            <ul class="list-unstyled mt-3">
+              <li><a href="#" class="text-light text-decoration-none small ">Giới thiệu về TocoToco</a></li>
+              <li><a href="#" class="text-light text-decoration-none small">Nhượng quyền</a></li>
+              <li><a href="#" class="text-light text-decoration-none small">Tin tức</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase fw-bold gold-text">Chính sách</h5>
+            <ul class="list-unstyled mt-3">
+              <li><a href="#" class="text-light text-decoration-none small">Chính sách thành viên</a></li>
+              <li><a href="#" class="text-light text-decoration-none small">Hình thức thanh toán</a></li>
+              <li><a href="#" class="text-light text-decoration-none small">Vận chuyển giao nhận</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="btn-warning">
+        <div class="text-center small text-uppercase text-light">
+          © 2026 TocoToco Tea. All rights reserved
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+<!-- End Footer -->
+
+
+<div class="modal" id="productDetail">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Chi tiết sản phẩm</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body custom_modal_product">
+                   <div class="product_item">
+                      <div class="row">
+                      <div class="singe-product-image">
+                        <div class="col-md-5">
+                          <img src="{{asset('uploads/product/'.$pro->product_image)}}">
+                        </div>
+                        <div class="col-md-7">
+                          <div class="singe-product-content">
+                            <h4>san pham 1</h4>
+                            <span class="price">20.000 VNĐ</span>
+                            <span class="old-price">100.000 VNĐ</span>
+                            <p> <span> Danh mục: Tra sua</span></p>
+                            <p><span>Kho hàng: 100</span></p>
+                            <p><span>Trình trạng:
+                                    <span style="color: green; font-weight: bold;" >còn hàng</span></span></p>
+                            <p class="desc">Mô tả: sieu ngon </p>
+                            <form action="#" method="post">    
+                                  <label class="action-wrapper" >Số lượng:</label>
+                                  <input name="qty" type="number" value="1" min="1" max="100" class="qty_input">
+                                    <button type="submit" class="btn btn-cart btn-warning round-fill">
+                                      <i class="fa-solid fa-cart-shopping"></i>
+                                        + <span class="total_price_display">VNĐ</span> 
+                                    </button>
+                          </div>   
+                        </div>
+                        
+                           <div class="option-box">
+                              <div class="option-title">
+                                <h4>Chọn loại</h4>
+                              </div>
+                              <div class="option-list">
+                                <label><input type="radio" name="option_style" value="Nóng">Nóng</label>
+                                <label><input type="radio" name="option_style" value="Lạnh">Lạnh</label>
+                              </div>
+                              <div class="option-title">
+                                <h4>Chọn size</h4>
+                              </div>
+                              <div class="option-list">
+                                <label><input type="radio" name="option_size" value="M">Size M</label>
+                                <label><input type="radio" name="option_size" value="L">Size L</label>
+                              </div>
+                              <div class="option-title">
+                                <h4>Chọn mức đường</h4>
+                              </div>
+                              <div class="option-list">
+                                <label><input type="radio" name="option_sugar" value="50%">100 % đường</label>
+                                <label><input type="radio" name="option_sugar" value="không đường">Không đường</label>
+                                <label><input type="radio" name="option_sugar" value="ít đường">ít đường</label>
+                              </div>
+                               <div class="option-title">
+                                <h4>Chọn topping</h4>
+                              </div>
+                              <div class="option-topping">
+                                <label class="topping-item"><span><input type="checkbox" name="option_toppings[]" class="toppings" value="6000">Thêm trân châu</span> <b> + 6000</b></label>
+                              </div>
+                           </div>
+                          </form>   
+                      </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+</div>
+
+             
+
+
+     
+<!-- End Menu -->
+
+<div class="modal" id="registerModal">
+  <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Đăng ký tài khoản</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="container-fluid">
+                      <div class="d-flex align-items-center justify-content-between mb-3">
+                          <form action="#">
+                            <div class="mb-3 mt-3">
+                                <label  class="form-label">Họ và tên:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Ho va ten" name="email">
+                              </div>
+                              <div class="mb-3 mt-3">
+                                <label  class="form-label">Địa chỉ Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="dia chi email" name="email">
+                              </div>
+                              <div class="mb-3">
+                                <label  class="form-label">Mật khẩu:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="mat khau" name="pswd">
+                              </div>
+                              <button type="submit" class="btn btn-primary">Đăng ký</button>
+                              <p class="text-center mb-0">Bạn đã có tài khoản vui lòng đăng nhập? <a href="#" data-bs-toggle="modal" data-bs-target="#myModal" data-bs-dismiss="modal">Đăng nhập</a></p>
+                            </form>
+                      </div>
+                </div>    
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/fontawesome.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+
+</body>
+</html>
+

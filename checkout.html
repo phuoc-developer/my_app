@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TocoToco Menu</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<link  href="css/style.css"  rel="stylesheet">
+<link href="css/animate.css"  rel="stylesheet">
+<link href="css/bootstrap.min.css"  rel="stylesheet">
+<link href="css/font-awesome.min.css"  rel="stylesheet">
+<link href="css/prettyPhoto.css"  rel="stylesheet">
+<link href="css/price-range.css"  rel="stylesheet">
+<link href="css/responsive.css"  rel="stylesheet">
+</head>
+
+<body>
+
+
+<!-- Navbar -->
+ <navbar class="navbar navbar-expand-lg bg-dark py-2">
+  <div class="container ">
+    <div class="col-sm-3">
+      <a class="navbar-brand fw-bold text-warning" href="index.html"><img class="logo-product" src="image/logo/Logo01.png"></a>
+    </div>
+    <div class="col-sm-9 text-primary">
+       <ul class="navbar navbar-expand-lg">
+        <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Đăng nhập</a></li>   
+          <div class="modal" id="myModal">
+  <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Đăng nhập</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="container-fluid">
+                      <div class="d-flex align-items-center justify-content-between mb-3">
+                          <form action="#">
+                              <div class="mb-3 mt-3">
+                                <label  class="form-label">Địa chỉ Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="dia chi email" name="email">
+                              </div>
+                              <div class="mb-3">
+                                <label  class="form-label">Mật khẩu:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="mat khau" name="pswd">
+                              </div>
+                              <div class="form-check mb-3">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" name="remember">Nhớ Đăng nhập
+                                </label>
+                              </div>
+                              <button type="submit" class="btn btn-primary">Đăng nhập</button>
+                              <p class="text-center mb-0">Bạn chưa có tài khoản vui lòng đăng ký? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal">Đăng ký</a></p>
+                            </form>
+                      </div>
+                </div>    
+ </div>
+   
+        </ul>
+        <li class="nav-item"><a class="nav-link" href="cart.html">Giỏ hàng</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tin tức</a></li>
+        <li class="nav-item dropdown"><a class="nav-link" href="#" id="productDropdown">Sản phẩm<i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="shop.html">TOCOTOCO TEA</a></li>
+            <li><a class="dropdown-item" href="#">INSTART MILK TEA</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Tin tức</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Cửa hàng</a></li>
+      </ul>
+    </div>
+  </div>
+</navbar>
+<!-- End navbar -->
+
+<!--Checkout product-->
+<section class="checkout-product  border rounded shadow-sm bg-white">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-7">
+                <h4 class="fw-bold mb-4">Chi tiết đơn hàng</h4>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Họ và tên *</label>
+                        <input type="text" class="form-control" placeholder="Họ và tên">
+                    </div>
+                     <div class="mb-3">
+                        <label class="form-label">Số điện thoại *</label>
+                        <input type="text" class="form-control" placeholder="Số điện thoại">
+                    </div>
+                     <div class="mb-3">
+                        <label class="form-label">Địa chỉ *</label>
+                        <textarea class="form-control" placeholder="Địa chỉ" rows="3"></textarea>
+                    </div>
+                     <div class="mb-3">
+                        <label class="form-label">Ghi chú đơn hàng*</label>
+                        <textarea class="form-control" placeholder="Ghi chú đơn hàng" rows="3"></textarea>
+                    </div>
+                     <div class="mb-3">
+                        <label class="form-label">Hình thức thanh toán*</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment" id="cod" checked>
+                            <label class="form-check-label" for="cod">Thanh toán qua tài khoản ngân hàng</label>
+                        </div>
+                         <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment" id="cod" checked>
+                            <label class="form-check-label" for="cod">Thanh toán khi nhận hàng</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-5">
+                <div class="order-box p-4">
+                    <h4 class=" fw-bold border-bottom pb-2 mb-3">Đơn hàng</h4>
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="image/product/product1.jpg" width="80" alt="">
+                        <div class="ms-3 flex-grow-1">
+                            <h6 class="mb-0 fw-bold">Royal Pearl Milk Coffe</h6>
+                            <small class="text-muted">Size: Vừa (2)</small>
+                        </div>
+                        <div class="fw-bold">29.000 VNĐ</div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4 pb-3 border-bottom">
+                        <img src="image/product/product1.jpg" width="80" alt="">
+                        <div class="ms-3 flex-grow-1">
+                            <h6 class="mb-0 fw-bold">Royal Pearl Milk Coffe</h6>
+                            <small class="text-muted">Size: Lớn (2)</small>
+                        </div>
+                        <div class="fw-bold">35.000 VNĐ</div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Số tiền</span>
+                        <span class="fw-bold">128.000 VNĐ</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2 pb-3 border-bottom">
+                      <span>Phí vận chuyển</span>
+                      <span class="fw-bold">0 VNĐ</span>
+                  </div>
+                  <div class="d-flex justify-content-between mb-4">
+                      <span>Tổng thanh toán</span>
+                      <span class="fw-bold">128.000 VNĐ</span>
+                  </div>
+                  <a href="#">
+                    <button class="btn btn-warning rounded-pill py-2 fw-bold w-100">Đặt hàng</button>
+                  </a>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Checkout product-->
+
+<!-- footer -->
+    <footer class="bg-dark text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4 text-center">
+            <img src="image/logo/logo02.png" alt="logo" class="img-fuild " style="max-width: 200px;">
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase fw-bold gold-text">CÔNG TY CP TM & DV TACO VIỆT NAM</h5>
+            <p class="small mt-3">
+              <i>Trụ sở chính: Tầng 5 toà Tower 1, KĐT Times City, Hà Nội</i>
+            </p>
+            <p class="small"><i class="bi bi-envelope-fill"></i>info@tocotocotea.com</p>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h5 class="text-uppercase fw-bold gold-text">Về chúng tôi</h5>
+            <ul class="list-unstyled mt-3">
+              <li><a href="#" class="text-light text-decoration-none small">Giới thiệu về TocoToco</a></li>
+              <li><a href="#" class="text-light text-decoration-none small">Nhượng quyền</a></li>
+              <li><a href="#" class="text-light text-decoration-none small">Tin tức</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase fw-bold gold-text">Chính sách</h5>
+            <ul class="list-unstyled mt-3">
+              <li><a href="#" class="text-light text-decoration-none small">Chính sách thành viên</a></li>
+              <li><a href="#" class="text-light text-decoration-none small">Hình thức thanh toán</a></li>
+              <li><a href="#" class="text-light text-decoration-none small">Vận chuyển giao nhận</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="bg-secondary">
+        <div class="text-center small">
+          © 2026 TocoToco Tea. All rights reserved
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+<!-- End Footer -->
+
+<div class="modal" id="registerModal">
+  <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Đăng ký tài khoản</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="container-fluid">
+                      <div class="d-flex align-items-center justify-content-between mb-3">
+                          <form action="#">
+                            <div class="mb-3 mt-3">
+                                <label  class="form-label">Họ và tên:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Ho va ten" name="email">
+                              </div>
+                              <div class="mb-3 mt-3">
+                                <label  class="form-label">Địa chỉ Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="dia chi email" name="email">
+                              </div>
+                              <div class="mb-3">
+                                <label  class="form-label">Mật khẩu:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="mat khau" name="pswd">
+                              </div>
+                              <button type="submit" class="btn btn-primary">Đăng ký</button>
+                              <p class="text-center mb-0">Bạn đã có tài khoản vui lòng đăng nhập? <a href="#" data-bs-toggle="modal" data-bs-target="#myModal" data-bs-dismiss="modal">Đăng nhập</a></p>
+                            </form>
+                      </div>
+                </div>    
+ 
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/fontawesome.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+
+</body>
+</html>
+

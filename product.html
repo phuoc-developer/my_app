@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TocoToco Menu</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<link  href="css/style.css"  rel="stylesheet">
+<link href="css/animate.css"  rel="stylesheet">
+<link href="css/bootstrap.min.css"  rel="stylesheet">
+<link href="css/font-awesome.min.css"  rel="stylesheet">
+<link href="css/prettyPhoto.css"  rel="stylesheet">
+<link href="css/price-range.css"  rel="stylesheet">
+<link href="css/responsive.css"  rel="stylesheet">
+</head>
+
+<body>
+<!--Admin-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3">
+  <div class="container-fluid">
+    <a href="#" class="navbar-brand fw-bold text-uppercase">TOcoToco TEA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNavbar">
+      <span class="navbar-toggle-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="adminNavbar">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item " ><a href="admin.html" class="nav-link"><i class="fas fa-home"></i>Trang chủ</a></li>
+        <li class="nav-item"><a href="category.html" class="nav-link" ><i class="fa-solid fa-list"></i>Danh mục</a></li>
+        <li class="nav-item"><a href="product.html" class="nav-link active"><i class="fa-solid fa-mug-hot"></i>Sản phẩm</a></li>
+        <li class="nav-item"><a href="user.html" class="nav-link"><i class="fa-solid fa-user"></i>Người dùng</a></li>
+        <li class="nav-item"><a href="shopping.html" class="nav-link"><i class="fa-solid fa-cart-shopping"></i>Đơn hàng</a></li>
+      </ul>
+      <form class="d-flex align-items-center">
+        <input type="search" class="form-control form-control-sm me-3" placeholder="Tìm kiếm">
+        <button class="btn btn-sm btn-outline-light me-3" type="button">Tìm kiếm</button>
+        <a href="#" class="text-white" text-decoration-none></a>
+      </form>
+    </div>
+  </div>
+</nav>
+<!--Admin  -->
+
+
+<!--Product -->
+<section class="product">
+  <div class="container-fluid p-4">
+    <div class="card shadow-sm border-0">
+      <div class="card-header bg-light p-3">
+        <h5 class="mb-0 text-secondary">Quản lí sản phẩm</h5>
+      </div>
+    </div>
+    <div class="card-body">
+           <ul class="mb-4">
+            <li><a href="#" class="btn btn-success d-flex align-items-center fw-bold py-3" data-bs-toggle="modal" data-bs-target="#addproduct"><i class="fa-solid fa-circle-plus me-2"></i>Thêm sản phẩm
+            </a></li>
+            <div class="modal" id="addproduct">
+  <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title text-uppercase text-warning fw-bold shadow-sm">Thêm sản phẩm</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="container-fluid">
+                      <div class="d-flex align-items-center justify-content-between mb-3">
+                          <form action="#">
+                            <div class="modal-body-admin">
+                              <div class="mb-3">
+                                <label class="form-label fw-bold text-secondary">Tên sản phẩm</label>
+                                <input type="text" name="category_name" class="form-control" placeholder="nhập tên sản phẩm">
+                              </div>
+                              <div class="col-12">
+                                <label class="form-label fw-bold">Ảnh</label>
+                                <input type="file" class="form-control">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label fw-bold">Giá</label>
+                                <input type="text" class="form-control">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label fw-bold text-secondary">Danh mục</label>
+                                <select class="form-select">
+                                  <option value="1">Trà sữa</option>
+                                  <option value="2">Cà phê</option>
+                                </select>
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label fw-bold">Giảm giá</label>
+                                <input type="number" class="form-control" value="0">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label fw-bold">Ngày nhập</label>
+                                <input type="date" class="form-control">
+                              </div>
+                            </div>
+                            <div class="modal-footer-admin">
+                              <a href="#"><button class="btn btn-secondary px-4" data-bs-dismiss="modal">Hủy bỏ</button></a>
+                              <button class="btn btn-success btn-sm px-4 shadow-sm" type="submit">Lưu sản phẩm</button>
+                            </div>
+                          </form>
+                      </div>
+                </div>    
+          </ul>
+          <div class="table-responsive">
+          <table class="table align-middle">
+            <thead class="table-dark">
+            <tr>
+              <th class="ps-3">Ảnh</th>
+              <th>Tên sản phẩm</th>
+              <th>Giá</th>
+                <th>Giảm giá</th>
+                <th>Ngày</th>
+                <th class="text-center">Hành động</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="ps-3">
+                    <img src="image/product/product1.jpg" alt="" width="50" height="50" class="rouded shadow-sm" style="object-fit: cover;">
+                </td>
+                 <td class="fw-bold">Grass Jelly Milk</td>
+                 <td>35.000 VNĐ</td>
+                 <td class="badge rouded-pill bg-danger">15%</td>
+                 <td>07/12/2021</td>
+                 <td class="text-center">
+                    <button class="btn btn-warning btn-sm fw-bold px-3" data-bs-toggle="modal" data-bs-target="#editproductModal">Sửa</button>
+                    <button class="btn btn-danger btn-sm fw-bold px-3">Xóa</button>
+                 </td>
+              </tr>
+               <tr>
+                <td class="ps-3">
+                    <img src="image/product/product1.jpg" alt="" width="50" height="50" class="rouded shadow-sm" style="object-fit: cover;">
+                </td>
+                 <td class="fw-bold">Grass Jelly Milk</td>
+                 <td>35.000 VNĐ</td>
+                 <td class="badge bg-danger">15%</td>
+                 <td>07/12/2021</td>
+                 <td class="text-center">
+                    <button class="btn btn-warning btn-sm fw-bold px-3" data-bs-toggle="modal" data-bs-target="#editproductModal">Sửa</button>
+                    <button class="btn btn-danger btn-sm fw-bold px-3">Xóa</button>
+                 </td>
+              </tr>
+               <tr>
+                <td class="ps-3">
+                    <img src="image/product/product1.jpg" alt="" width="50" height="50" class="rouded shadow-sm" style="object-fit: cover;">
+                </td>
+                 <td class="fw-bold">Grass Jelly Milk</td>
+                 <td>35.000 VNĐ</td>
+                 <td class="badge bg-danger">15%</td>
+                 <td>07/12/2021</td>
+                 <td class="text-center">
+                    <button class="btn btn-warning btn-sm fw-bold px-3" data-bs-toggle="modal" data-bs-target="#editproductModal">Sửa</button>
+                    <button class="btn btn-danger btn-sm fw-bold px-3">Xóa</button>
+                 </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+  </div>
+</section>
+<!--Product END -->
+
+
+
+<!-- footer -->
+    <footer class="bg-dark text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4 text-center">
+            <img src="image/logo/logo02.png" alt="logo" class="img-fuild " style="max-width: 200px;">
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase fw-bold gold-text">CÔNG TY CP TM & DV TACO VIỆT NAM</h5>
+            <p class="small mt-3">
+              <i>Trụ sở chính: Tầng 5 toà Tower 1, KĐT Times City, Hà Nội</i>
+            </p>
+            <p class="small"><i class="bi bi-envelope-fill"></i>info@tocotocotea.com</p>
+          </div>
+          <div class="col-md-2 mb-4">
+            <h5 class="text-uppercase fw-bold gold-text">Về chúng tôi</h5>
+            <ul class="list-unstyled mt-3">
+              <li><a href="#" class="text-light text-decoration-none small">Giới thiệu về TocoToco</a></li>
+              <li><a href="#" class="text-light text-decoration-none small">Nhượng quyền</a></li>
+              <li><a href="#" class="text-light text-decoration-none small">Tin tức</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5 class="text-uppercase fw-bold gold-text">Chính sách</h5>
+            <ul class="list-unstyled mt-3">
+              <li><a href="#" class="text-light text-decoration-none small">Chính sách thành viên</a></li>
+              <li><a href="#" class="text-light text-decoration-none small">Hình thức thanh toán</a></li>
+              <li><a href="#" class="text-light text-decoration-none small">Vận chuyển giao nhận</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="bg-secondary">
+        <div class="text-center small">
+          © 2026 TocoToco Tea. All rights reserved
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+<!-- End Footer -->
+
+ 
+
+<div class="modal" id="editproductModal">
+  <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title text-uppercase">Cập nhật sản phẩm</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <div class="container-fluid">
+                      <div class="d-flex align-items-center justify-content-between mb-3">
+                          <form action="#">
+                            <div class="modal-body-admin">
+                              <div class="mb-3">
+                                <label class="form-label fw-bold text-secondary">Tên sản phẩm</label>
+                                <input type="text" class="form-control" placeholder="nhập tên sản phẩm">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label fw-bold text-secondary">Danh mục</label>
+                                <select  id="edit-category" class="form-select">
+                                    <option value="1">Trà sữa</option>
+                                    <option value="2">Cà phê</option>
+                                </select>
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label fw-bold text-secondary">Giá</label>
+                                <input type="text" id="edit-price" class="form-control">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label fw-bold text-secondary">Giảm giá</label>
+                                <input type="number" id="edit-sale" class="form-control">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label fw-bold text-secondary">Ảnh</label>
+                               <input type="file" class="form-control">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label fw-bold text-secondary">Ngày nhập</label>
+                               <input type="date" class="form-control">
+                              </div>
+                            </div>
+                            <div class="modal-footer-admin">
+                              <a href="#"><button class="btn btn-secondary" data-bs-dismiss="modal">Hủy bỏ</button></a>
+                              <button class="btn btn-success btn-sm px-4 shadow-sm" type="submit">Lưu cập nhật</button>
+                            </div>
+                          </form>
+                      </div>
+                </div>    
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/fontawesome.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+
+</body>
+</html>
+
